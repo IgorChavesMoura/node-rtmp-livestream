@@ -1,0 +1,26 @@
+@import '~video.js/dist/video-js.css';
+
+.livestream-content {
+
+  display: flex;
+
+  justify-content: center;
+
+  width: 100%;
+
+  padding: 15px;
+
+  video {
+
+    width: 100%;
+
+  }
+
+  .vjs-live {
+
+    width: auto !important;
+    height: auto !important;
+
+  }
+
+}

@@ -1,0 +1,89 @@
+.livestreams {
+
+  padding: 15px;
+
+  display: grid;
+  grid-template-columns: repeat( auto-fit, 350px );
+
+  .livestream {
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    img {
+
+      width: 100%;
+
+      transition: all 0.3s ease;
+
+    }
+
+    .live-badge {
+
+      // color: #e91917;
+      // font-weight: bolder;
+
+      // border: 3px solid #e91917;
+      // border-radius: 2px;
+
+      // padding: 1px 2px;
+
+      position: absolute;
+      top: 5px;
+      left: 5px;
+
+      background-color: #e91917;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+
+    }
+
+    .live-info {
+
+      display: flex;
+      flex-direction: row;
+
+      align-items: center;
+
+      margin-top: 1rem;
+
+      .user {
+
+        width: 40px;
+        height: 40px;
+
+      }
+
+      p {
+
+        margin-left: 5px;
+
+        font-weight: bold;
+
+        color: var(--main-color);
+
+      }
+
+    }
+
+
+
+    &:hover {
+
+      cursor: pointer;
+
+      img:not(.user) {
+
+        border:3px solid var(--main-color);
+        border-radius: 1px;
+
+      }
+
+    }
+
+  }
+
+}

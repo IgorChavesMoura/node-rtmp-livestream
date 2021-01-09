@@ -1,0 +1,16 @@
+{
+  "name": "node-rtmp-livestream",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Igor Moura",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "node-media-server": "^2.2.4",
+    "request": "^2.88.2"
+  }
+}

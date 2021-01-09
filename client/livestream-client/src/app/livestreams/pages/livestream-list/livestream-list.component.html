@@ -1,0 +1,13 @@
+<div *ngIf="!livestreams.length" class="no-livestreams">
+  <h1>No livestreams at the moment :(</h1>
+</div>
+<div *ngIf="!!livestreams.length" class="livestreams" >
+  <div class="livestream" (click)="goToLivestream(livestream)" *ngFor="let livestream of livestreams" >
+    <img [src]="getLivestreamThumbnail(livestream)" [alt]="livestream">
+    <span class="live-badge" ></span>
+    <div class="live-info">
+      <img src="assets/flixfy-logo.png" alt="" class="user">
+      <p>{{ livestream }}</p>
+    </div>
+  </div>
+</div>
